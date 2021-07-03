@@ -16,20 +16,16 @@ import (
 )
 
 type TicketBody struct {
-	Alert       bool                    `json:"alert"`
-	Autorespond bool                    `json:"autorespond"`
-	Source      string                  `json:"source"`
-	Name        string                  `json:"name"`
-	Email       string                  `json:"email"`
-	Phone       string                  `json:"phone"`
-	Subject     string                  `json:"subject"`
-	Ip          string                  `json:"ip"`
-	Message     string                  `json:"message"`
-	Attachments []TicketBodyAttachments `json:"attachments,omitempty"`
-}
-
-type TicketBodyAttachments struct {
-	Attachment map[string]string
+	Alert       bool                `json:"alert"`
+	Autorespond bool                `json:"autorespond"`
+	Source      string              `json:"source"`
+	Name        string              `json:"name"`
+	Email       string              `json:"email"`
+	Phone       string              `json:"phone"`
+	Subject     string              `json:"subject"`
+	Ip          string              `json:"ip"`
+	Message     string              `json:"message"`
+	Attachments []map[string]string `json:"attachments,omitempty"`
 }
 
 // CreateTicket is to create a new ticket via json api
