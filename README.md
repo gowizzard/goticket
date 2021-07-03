@@ -28,8 +28,15 @@ body := goticket.TicketBody{
     "Sehr sauer",
     "",
     "data:text/html,Message <b>Was ist da los????</b>",
-    []goticket.TicketBodyAttachments{},
+    nil,
 }
+
+// Add file
+file := make(map[string]string)
+file["files.txt"] = "data:text/plain;charset=utf-8,content"
+
+// Add file to attachment
+body.Attachments = append(body.Attachments, file)
 
 // Create test ticket
 ticket, err := goticket.CreateTicket(body, "https://base.url.de", "token")
