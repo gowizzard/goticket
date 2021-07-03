@@ -14,6 +14,23 @@ With a function you can create a ticket directly in your system. How to create a
 
 ### Create ticket
 
+To give you a better understanding of the data to be transferred, I'll show you the structure for creating the JSON data. Here you can see which values are needed. Below you will find an example.
+
+```go
+type TicketBody struct {
+	Alert       bool                `json:"alert"`
+	Autorespond bool                `json:"autorespond"`
+	Source      string              `json:"source"`
+	Name        string              `json:"name"`
+	Email       string              `json:"email"`
+	Phone       string              `json:"phone"`
+	Subject     string              `json:"subject"`
+	Ip          string              `json:"ip"`
+	Message     string              `json:"message"`
+	Attachments []map[string]string `json:"attachments,omitempty"`
+}
+```
+
 With this function you create a ticket.
 
 ```go
