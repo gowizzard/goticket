@@ -35,17 +35,17 @@ With this function you create a ticket.
 
 ```go
 // Ticket body
-body := goticket.TicketBody{
-    true,
-    true,
-    "API",
-    "Tester",
-    "test@test.de",
-    "0123456789",
-    "Sehr sauer",
-    "",
-    "data:text/html,Message <b>Was ist da los????</b>",
-    nil,
+body := &goticket.TicketBody{
+    Alert:       true,
+    Autorespond: true,
+    Source:      "API",
+    Name:        "Jonas Kwiedor",
+    Email:       "jonas.kwiedor@jj-ideenschmiede.de",
+    Phone:       "",
+    Subject:     "Sehr sauer",
+    Ip:          "data:text/html,Message <b>Was ist da los????</b>",
+    Message:     "",
+    Attachments: nil,
 }
 
 // Add file
