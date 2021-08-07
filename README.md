@@ -5,7 +5,7 @@ Is a library for the ticket software osTicket. [Here](https://osticket.com/) you
 ## Install
 
 ```console
-go get github.com/jojojojonas/goticket
+go get github.com/gowizzard/goticket
 ```
 
 ## How to use?
