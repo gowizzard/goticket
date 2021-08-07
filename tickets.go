@@ -29,7 +29,7 @@ type TicketBody struct {
 }
 
 // CreateTicket is to create a new ticket via json api
-func CreateTicket(data TicketBody, baseUrl, token string) (string, error) {
+func CreateTicket(data *TicketBody, baseUrl, token string) (string, error) {
 
 	// Create new client
 	client := &http.Client{}
