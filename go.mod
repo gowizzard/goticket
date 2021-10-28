@@ -1,3 +1,3 @@
-module github.com/jojojojonas/goticket
+module github.com/gowizzard/goticket
 
 go 1.16
