@@ -1,5 +1,7 @@
 # goticket
 
+[![Go](https://github.com/gowizzard/goticket/actions/workflows/go.yml/badge.svg)](https://github.com/gowizzard/goticket/actions/workflows/go.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/gowizzard/goticket)](https://goreportcard.com/report/github.com/gowizzard/goticket) 
+
 Is a library for the ticket software osTicket. [Here](https://osticket.com/) you can find their website. With this small library you can create a new ticket in json format via the Rest API. A small tutorial can be found here.
 
 ## Install
